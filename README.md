@@ -112,6 +112,24 @@ Key techniques:
 
 ---
 
+## 📊 Experiment Results
+
+The following table summarizes the performance of different routing algorithms across multiple simulation runs.
+
+| Algorithm | Category | Avg Cost | Best Cost | Worst Cost | Success Rate |
+|----------|----------|----------|----------|----------|----------|
+| Q-Learning | Reinforcement Learning | 19.30 | 15 | 23 | 20/20 |
+| DQN | Deep Reinforcement Learning | ~18.7 | ~15 | ~22 | 20/20 |
+| Dijkstra | Graph Algorithm | 17.15 | 15 | 20 | 20/20 |
+| A* | Graph Algorithm | 17.15 | 15 | 20 | 20/20 |
+| Greedy | Heuristic Search | 35.27 | 16 | 48 | 15/20 |
+
+**Observations**
+
+- **Dijkstra and A*** consistently produce the optimal shortest paths.
+- **Q-Learning and DQN** learn adaptive routing strategies through exploration.
+- **Greedy search** is faster but often produces suboptimal paths and may fail in complex graphs.
+- Reinforcement learning approaches demonstrate the potential to handle **dynamic logistics environments**.
 
 ## 📊 Training Results
 
