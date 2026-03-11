@@ -179,6 +179,9 @@ Example outputs:
 ---
 
 
+This repository contains two reinforcement learning implementations for logistics routing:
+- Q-Learning (tabular RL)
+- Deep Q-Network (DQN)
 
 ## Project Structure
 
