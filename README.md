@@ -5,11 +5,10 @@ Reinforcement Learning for Logistics Path Optimization
 <p align="center">
 Q-Learning • Deep Q Network • Dijkstra • A* • Greedy
 </p>
-# \# Reinforcement Learning for Logistics Path Optimization
+# Reinforcement Learning for Logistics Path Optimization
 
-# 
 
-# ## Project Overview
+# Project Overview
 
 This project explores how **Reinforcement Learning (RL)** can be applied to solve **logistics routing problems**.
 
