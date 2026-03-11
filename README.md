@@ -55,28 +55,34 @@ The reinforcement learning agent learns how to navigate this network efficiently
 
 ```mermaid
 flowchart LR
-    A[Logistics Environment] --> B[State Representation]
-    B --> C[RL Agent]
 
-    C --> D[Q-Learning]
-    C --> E[DQN]
+A[Logistics Environment] --> B[State Representation]
+B --> C[RL Agent]
 
-    D --> F[Action Selection]
-    E --> F
+C --> D[Q-Learning]
+C --> E[DQN]
 
-    F --> G[Next Node Decision]
-    G --> A
+D --> F[Action Selection]
+E --> F
 
-    A --> H[Reward / Cost Feedback]
-    H --> C
+F --> G[Next Node Decision]
+G --> A
 
-    A --> I[Classical Baselines]
-    I --> J[Dijkstra / A* / Greedy]
+A --> H[Reward Feedback]
+H --> C
 
-    C --> K[Performance Evaluation]
-    J --> K
-    K --> L[Visualization & Results]
-···
+A --> I[Classical Algorithms]
+I --> J[Dijkstra]
+I --> K[A*]
+I --> L[Greedy]
+
+C --> M[Performance Evaluation]
+J --> M
+K --> M
+L --> M
+
+M --> N[Visualization and Results]
+```
 
 ## 🧠 Algorithms Implemented
 
