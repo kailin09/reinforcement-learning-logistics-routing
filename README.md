@@ -5,48 +5,44 @@ Reinforcement Learning for Logistics Path Optimization
 <p align="center">
 Q-Learning • Deep Q Network • Dijkstra • A* • Greedy
 </p>
-# Reinforcement Learning for Logistics Path Optimization
+Reinforcement Learning for Logistics Path Optimization
 
+---
 
-# Project Overview
+## 📌 Project Overview
 
-This project explores how **Reinforcement Learning (RL)** can be applied to solve **logistics routing problems**.
+This project explores how **Reinforcement Learning (RL)** can be applied to solve **logistics routing problems** on graph networks.
 
-The goal is to train an intelligent agent that learns how to navigate through a logistics network and find efficient routes between warehouses.
+The objective is to train an intelligent agent that learns efficient transportation routes between logistics hubs.
 
-Algorithms implemented in this project:
+Implemented approaches include:
 
-- Q-Learning
-- Deep Q-Network (DQN)
-- Dijkstra
-- A*
-- Greedy Search
+- **Q-Learning (Tabular Reinforcement Learning)**
+- **Deep Q-Network (DQN)**
 
-# ---
+These approaches are compared with classical path planning algorithms:
 
-## Logistics Network
+- **Dijkstra**
+- **A\***
+- **Greedy Search**
+
+---
+
+## 🗺 Logistics Network
 
 <p align="center">
 <img src="outputs/dynamic_network_sample.png" width="700">
 </p>
 
-The logistics system is modeled as a **graph network** where:
+The logistics system is modeled as a **graph network**:
 
-- **Nodes** represent logistics hubs or warehouses  
-- **Edges** represent transportation routes  
-- **Edge weights** represent transportation cost or travel time  
+- **Nodes** → logistics hubs / warehouses  
+- **Edges** → transportation routes  
+- **Edge weights** → travel cost or distance  
 
-This structure allows reinforcement learning agents to learn optimal routing strategies.
-
-# Example network:
-
-A → C → F → J → L
-
-A → B → D → H → K → L
-
+The reinforcement learning agent learns how to navigate this network efficiently.
 
 ---
-
 
 ## Algorithms Implemented
 
@@ -59,6 +55,7 @@ Features:
 - Q-table learning
 - Epsilon-greedy exploration
 - Dynamic traffic environment
+- Multi-algorithm performance comparison
 
 ---
 
@@ -71,13 +68,12 @@ Key techniques:
 - Experience Replay
 - Target Network
 - Neural Q-value approximation
-
+- PyTorch implementation
 
 ---
 
 
-\# Training Example
-
+## 📊 Training Results
 
 Example DQN training results:
 
@@ -109,32 +105,18 @@ The agent successfully learns an efficient route from source to destination.
 ---
 
 
-\# Algorithm Comparison
+## 📊 Algorithm Comparison
 
+The project evaluates **Reinforcement Learning (RL)** performance against classical shortest path algorithms.
 
+| Algorithm | Category | Optimality | Avg Cost |
+|-----------|----------|------------|----------|
+| Q-Learning | Reinforcement Learning | Learned Policy | ~19 |
+| Dijkstra | Graph Algorithm | Optimal | ~17 |
+| A* | Graph Algorithm | Optimal | ~17 |
+| Greedy | Heuristic Search | Not Guaranteed | ~35 |
 
-The project evaluates RL performance against classical shortest path algorithms.
-
-
-
-| Algorithm | Avg Cost |
-
-|-----------|----------|
-
-| RL (Q-Learning) | ~19 |
-
-| Dijkstra | ~17 |
-
-| A\* | ~17 |
-
-| Greedy | ~35 |
-
-
-
-Dijkstra and A\* guarantee optimal solutions, while RL learns adaptive routing policies through exploration.
-
-
-
+Dijkstra and A* guarantee **optimal shortest paths**, while reinforcement learning learns **adaptive routing policies through exploration**.
 ---
 
 
@@ -204,30 +186,18 @@ rl_logistics_path_planning
 ```
 
 ---
+## ⚙️ Technologies Used
 
-
-
-\# Technologies Used
-
-
-
-\- Python
-
-\- PyTorch
-
-\- NumPy
-
-\- Matplotlib
-
-\- NetworkX
-
-
+- Python
+- PyTorch
+- NumPy
+- NetworkX
+- Matplotlib
 
 ---
 
 
-
-## How to Run
+## 🚀 How to Run
 
 ### Run Q-Learning
 
@@ -235,7 +205,7 @@ python q_learning_agent.py
 
 
 
-## Run DQN
+### Run DQN
 
 cd dqn_logistics_project
 python main_dqn.py
