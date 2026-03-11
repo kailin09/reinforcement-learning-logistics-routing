@@ -183,6 +183,7 @@ This repository contains two reinforcement learning implementations for logistic
 - Q-Learning (tabular RL)
 - Deep Q-Network (DQN)
 
+'''
 ## Project Structure
 
 rl_logistics_path_planning
@@ -205,6 +206,7 @@ rl_logistics_path_planning
 │ ├── multi_algorithm_cost_comparison.png
 │
 └── README.md
+'''
 
 ---
 
