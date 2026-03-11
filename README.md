@@ -386,7 +386,7 @@ Interests:
 
 
 
-!\[Training Reward](outputs/training\_rewards\_traffic\_state\_large\_graph.png)
+![Training Reward](outputs/training_rewards_traffic_state_large_graph.png)
 
 
 
@@ -394,7 +394,7 @@ Interests:
 
 
 
-!\[Smooth Reward](outputs/smoothed\_rewards\_traffic\_state\_large\_graph.png)
+![Smooth Reward](outputs/smoothed_rewards_traffic_state_large_graph.png)
 
 
 
@@ -402,5 +402,5 @@ Interests:
 
 
 
-!\[Comparison](outputs/multi\_algorithm\_cost\_comparison.png)
+![Comparison](outputs/multi_algorithm_cost_comparison.png)
 
