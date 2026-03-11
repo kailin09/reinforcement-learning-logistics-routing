@@ -25,23 +25,19 @@ Algorithms implemented in this project:
 
 # ---
 
-# \# Logistics Network
+## Logistics Network
 
-# <p align="center">
+<p align="center">
 <img src="outputs/dynamic_network_sample.png" width="700">
 </p>
 
-# The logistics system is represented as a \*\*graph network\*\*:
+The logistics system is modeled as a **graph network** where:
 
-# 
+- **Nodes** represent logistics hubs or warehouses  
+- **Edges** represent transportation routes  
+- **Edge weights** represent transportation cost or travel time  
 
-# \- Nodes → logistics hubs / warehouses
-
-# \- Edges → transportation routes
-
-# \- Edge weights → travel cost or distance
-
-# 
+This structure allows reinforcement learning agents to learn optimal routing strategies.
 
 # Example network:
 
