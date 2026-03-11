@@ -9,43 +9,21 @@ Q-Learning • Deep Q Network • Dijkstra • A* • Greedy
 
 # 
 
-# \## Project Overview
+# ## Project Overview
 
-# 
+This project explores how **Reinforcement Learning (RL)** can be applied to solve **logistics routing problems**.
 
-# This project explores how \*\*Reinforcement Learning (RL)\*\* can be applied to solve \*\*logistics routing problems\*\*.
+The goal is to train an intelligent agent that learns how to navigate through a logistics network and find efficient routes between warehouses.
 
-# 
+Algorithms implemented in this project:
 
-# The objective is to train an intelligent agent that learns to navigate through a logistics network and find efficient routes between warehouses.
-
-# 
-
-# Two reinforcement learning approaches are implemented:
-
-# 
-
-# \- \*\*Q-Learning (Tabular RL)\*\*
-
-# \- \*\*Deep Q-Network (DQN)\*\*
-
-# 
-
-# These models are compared with classical path planning algorithms:
-
-# 
-
-# \- \*\*Dijkstra\*\*
-
-# \- \*\*A\\\*\*\*
-
-# \- \*\*Greedy Search\*\*
-
-# 
+- Q-Learning
+- Deep Q-Network (DQN)
+- Dijkstra
+- A*
+- Greedy Search
 
 # ---
-
-# 
 
 # \# Logistics Network
 
@@ -72,9 +50,7 @@ A → C → F → J → L
 A → B → D → H → K → L
 
 
-
 ---
-
 
 
 ## Algorithms Implemented
@@ -108,7 +84,6 @@ Key techniques:
 \# Training Example
 
 
-
 Example DQN training results:
 
 Episode 500 Reward: -100
@@ -124,7 +99,6 @@ Episode 2500 Reward: 47
 Episode 3000 Reward: 47
 
 
-
 Testing result:
 
 Path: A -> C -> F -> J -> L
@@ -134,13 +108,10 @@ Test Reward: 47
 Reached Goal: True
 
 
-
 The agent successfully learns an efficient route from source to destination.
 
 
-
 ---
-
 
 
 \# Algorithm Comparison
@@ -195,13 +166,13 @@ Example outputs:
 
 
 
-\- training\_rewards.png
+\- training_rewards_traffic_state_large_graph.png
 
-\- smoothed\_rewards.png
+\- smoothed_rewards_traffic_state_large_graph.png
 
-\- dynamic\_network\_sample.png
+\- dynamic_network_sample.png
 
-\- multi\_algorithm\_cost\_comparison.png
+\- multi_algorithm_cost_comparison.png
 
 
 
@@ -209,44 +180,27 @@ Example outputs:
 
 
 
-\# Project Structure
+## Project Structure
 
-rl\_logistics\_path\_planning
+rl_logistics_path_planning
 
-
-
-├── q\_learning\_project
-
-│ ├── environment.py
-
-│ ├── q\_learning\_agent.py
-
-│ ├── evaluation.py
-
-│
-
-├── dqn\_logistics\_project
-
-│ ├── main\_dqn.py
-
-│ ├── dqn\_agent.py
-
-│ ├── replay\_buffer.py
-
+├── q_learning_project
 │ ├── env.py
-
+│ ├── q_learning_agent.py
+| ├── main.py
+| ├── visualize.py
 │
-
+├── dqn_logistics_project
+│ ├── main_dqn.py
+│ ├── dqn_agent.py
+| ├── env.py
+│ ├── replay_buffer.py
+│
 ├── outputs
-
-│ ├── training\_rewards\_traffic\_state\_large\_graph.png
-
-│ ├── smoothed\_rewards\_traffic\_state\_large\_graph.png
-
-│ ├── multi\_algorithm\_cost\_comparison.png
-
+│ ├── training_rewards.png
+│ ├── smoothed_rewards.png
+│ ├── multi_algorithm_cost_comparison.png
 │
-
 └── README.md
 
 ---
@@ -273,45 +227,18 @@ rl\_logistics\_path\_planning
 
 
 
-\# How to Run
+## How to Run
+
+### Run Q-Learning
+
+python q_learning_agent.py
 
 
 
-\## Run Q-Learning Version
+## Run DQN
 
-python q\_learning\_agent.py
-
-
-
-\## Run DQN Version
-
-cd dqn\_logistics\_project
-
-python main\_dqn.py
-
-
-
----
-
-
-
-\# Future Improvements
-
-
-
-Possible future upgrades:
-
-
-
-\- Double DQN
-
-\- Prioritized Experience Replay
-
-\- Multi-agent logistics routing
-
-\- Traffic-aware routing
-
-\- Integration with real map data (OpenStreetMap)
+cd dqn_logistics_project
+python main_dqn.py
 
 
 
@@ -319,31 +246,34 @@ Possible future upgrades:
 
 
 
-\# Author
+## Future Improvements
+
+Possible upgrades:
+
+- Double DQN
+- Multi-agent routing
+- Traffic prediction integration
+- Real-world road network using OpenStreetMap
 
 
+
+---
+
+
+
+## Author
 
 Kai Lin Sim  
 
-
-
 Computer Science and Technology  
-
 Beijing Institute of Technology  
 
+Research Interests:
 
-
-Interests:
-
-
-
-\- Artificial Intelligence
-
-\- Reinforcement Learning
-
-\- Intelligent Transportation Systems
-
-\- Logistics Optimization
+- Reinforcement Learning
+- Artificial Intelligent
+- Intelligent Transportation Systems
+- Logistics Optimization
 
 
 
