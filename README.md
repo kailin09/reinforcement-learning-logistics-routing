@@ -117,11 +117,12 @@ The project evaluates **Reinforcement Learning (RL)** performance against classi
 | Greedy | Heuristic Search | Not Guaranteed | ~35 |
 
 Dijkstra and A* guarantee **optimal shortest paths**, while reinforcement learning learns **adaptive routing policies through exploration**.
+
 ---
 
 
 
-\# Visualization
+## 🗺 Visualization
 
 
 
@@ -233,7 +234,7 @@ Possible upgrades:
 
 ## Author
 
-Kai Lin Sim  
+Sim Kai Lin  
 
 Computer Science and Technology  
 Beijing Institute of Technology  
