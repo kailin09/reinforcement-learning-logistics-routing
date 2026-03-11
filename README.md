@@ -76,8 +76,9 @@ flowchart LR
     C --> K[Performance Evaluation]
     J --> K
     K --> L[Visualization & Results]
+···
 
-## Algorithms Implemented
+## 🧠 Algorithms Implemented
 
 ### Q-Learning
 
