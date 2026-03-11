@@ -183,30 +183,30 @@ This repository contains two reinforcement learning implementations for logistic
 - Q-Learning (tabular RL)
 - Deep Q-Network (DQN)
 
-'''
 ## Project Structure
 
+```
 rl_logistics_path_planning
-
+│
 ├── q_learning_project
-│ ├── env.py
-│ ├── q_learning_agent.py
-| ├── main.py
-| ├── visualize.py
+│   ├── env.py
+│   ├── q_learning_agent.py
+│   ├── main.py
+│   └── visualize.py
 │
 ├── dqn_logistics_project
-│ ├── main_dqn.py
-│ ├── dqn_agent.py
-| ├── env.py
-│ ├── replay_buffer.py
+│   ├── main_dqn.py
+│   ├── dqn_agent.py
+│   ├── env.py
+│   └── replay_buffer.py
 │
 ├── outputs
-│ ├── training_rewards.png
-│ ├── smoothed_rewards.png
-│ ├── multi_algorithm_cost_comparison.png
+│   ├── training_rewards.png
+│   ├── smoothed_rewards.png
+│   └── multi_algorithm_cost_comparison.png
 │
 └── README.md
-'''
+```
 
 ---
 
