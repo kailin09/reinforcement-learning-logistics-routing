@@ -1,3 +1,10 @@
+<h1 align="center">
+Reinforcement Learning for Logistics Path Optimization
+</h1>
+
+<p align="center">
+Q-Learning • Deep Q Network • Dijkstra • A* • Greedy
+</p>
 # \# Reinforcement Learning for Logistics Path Optimization
 
 # 
@@ -42,7 +49,9 @@
 
 # \# Logistics Network
 
-# 
+# <p align="center">
+<img src="outputs/dynamic_network_sample.png" width="700">
+</p>
 
 # The logistics system is represented as a \*\*graph network\*\*:
 
@@ -68,76 +77,32 @@ A → B → D → H → K → L
 
 
 
-\# Algorithms Implemented
+## Algorithms Implemented
 
-
-
-\## Q-Learning
-
-
+### Q-Learning
 
 Tabular reinforcement learning algorithm that learns routing policies through exploration.
 
-
-
 Features:
 
-
-
-\- Q-table based learning
-
-\- Epsilon-greedy exploration
-
-\- Dynamic traffic simulation
-
-\- Multi-algorithm comparison
-
-
-
-State representation:
-
-
-
-(Current Node, Traffic State)
-
-
+- Q-table learning
+- Epsilon-greedy exploration
+- Dynamic traffic environment
 
 ---
 
+### Deep Q-Network (DQN)
 
+Deep reinforcement learning method using neural networks.
 
-\## Deep Q-Network (DQN)
+Key techniques:
 
-
-
-DQN uses a neural network to approximate the Q-value function.
-
-
-
-Key techniques used:
-
-
-
-\- Neural network Q approximation
-
-\- Experience replay
-
-\- Target network stabilization
-
-\- PyTorch implementation
-
-
-
-Network architecture:
-
-
-
-Input → 128 → ReLU → 128 → ReLU → Q-values
-
+- Experience Replay
+- Target Network
+- Neural Q-value approximation
 
 
 ---
-
 
 
 \# Training Example
@@ -382,25 +347,27 @@ Interests:
 
 
 
-\## Training Reward Curve
+## Training Results
 
+### Training Reward Curve
 
+<p align="center">
+<img src="outputs/training_rewards_traffic_state_large_graph.png" width="700">
+</p>
 
-![Training Reward](outputs/training_rewards_traffic_state_large_graph.png)
+---
 
+### Smoothed Reward Curve
 
+<p align="center">
+<img src="outputs/smoothed_rewards_traffic_state_large_graph.png" width="700">
+</p>
 
-\## Smooth Reward
+---
 
+### Algorithm Cost Comparison
 
-
-![Smooth Reward](outputs/smoothed_rewards_traffic_state_large_graph.png)
-
-
-
-\## Algorithm Comparison
-
-
-
-![Comparison](outputs/multi_algorithm_cost_comparison.png)
+<p align="center">
+<img src="outputs/multi_algorithm_cost_comparison.png" width="700">
+</p>
 
