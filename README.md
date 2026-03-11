@@ -27,6 +27,14 @@ These approaches are compared with classical path planning algorithms:
 - **Greedy Search**
 
 ---
+## ✨ Project Highlights
+
+- Implemented both **Q-Learning** and **Deep Q-Network (DQN)** for logistics route optimization  
+- Modeled transportation networks as **graph-based logistics systems**  
+- Compared reinforcement learning with **classical shortest path algorithms**  
+- Visualized training reward convergence and route cost comparisons  
+- Demonstrated RL applications in **intelligent transportation systems**
+---
 
 ## 🗺 Logistics Network
 
@@ -43,6 +51,31 @@ The logistics system is modeled as a **graph network**:
 The reinforcement learning agent learns how to navigate this network efficiently.
 
 ---
+## 🏗 System Architecture
+
+```mermaid
+flowchart LR
+    A[Logistics Environment] --> B[State Representation]
+    B --> C[RL Agent]
+
+    C --> D[Q-Learning]
+    C --> E[DQN]
+
+    D --> F[Action Selection]
+    E --> F
+
+    F --> G[Next Node Decision]
+    G --> A
+
+    A --> H[Reward / Cost Feedback]
+    H --> C
+
+    A --> I[Classical Baselines]
+    I --> J[Dijkstra / A* / Greedy]
+
+    C --> K[Performance Evaluation]
+    J --> K
+    K --> L[Visualization & Results]
 
 ## Algorithms Implemented
 
@@ -102,12 +135,30 @@ Reached Goal: True
 The agent successfully learns an efficient route from source to destination.
 
 
+### Training Reward Curve
+
+<p align="center">
+<img src="outputs/training_rewards_traffic_state_large_graph.png" width="700">
+</p>
+
+---
+
+### Smoothed Reward Curve
+
+<p align="center">
+<img src="outputs/smoothed_rewards_traffic_state_large_graph.png" width="700">
+</p>
+
 ---
 
 
 ## 📊 Algorithm Comparison
 
 The project evaluates **Reinforcement Learning (RL)** performance against classical shortest path algorithms.
+
+<p align="center">
+<img src="outputs/multi_algorithm_cost_comparison.png" width="700">
+</p>
 
 | Algorithm | Category | Optimality | Avg Cost |
 |-----------|----------|------------|----------|
@@ -120,46 +171,6 @@ Dijkstra and A* guarantee **optimal shortest paths**, while reinforcement learni
 
 ---
 
-
-
-## 🗺 Visualization
-
-
-
-The project generates visual outputs such as:
-
-
-
-\- Training reward curves
-
-\- Smoothed reward plots
-
-\- Network graph visualization
-
-\- Algorithm comparison plots
-
-
-
-Example outputs:
-
-
-
-\- training_rewards_traffic_state_large_graph.png
-
-\- smoothed_rewards_traffic_state_large_graph.png
-
-\- dynamic_network_sample.png
-
-\- multi_algorithm_cost_comparison.png
-
-
-
----
-
-
-This repository contains two reinforcement learning implementations for logistics routing:
-- Q-Learning (tabular RL)
-- Deep Q-Network (DQN)
 
 ## Project Structure
 
@@ -248,27 +259,5 @@ Research Interests:
 
 
 
-## Training Results
 
-### Training Reward Curve
-
-<p align="center">
-<img src="outputs/training_rewards_traffic_state_large_graph.png" width="700">
-</p>
-
----
-
-### Smoothed Reward Curve
-
-<p align="center">
-<img src="outputs/smoothed_rewards_traffic_state_large_graph.png" width="700">
-</p>
-
----
-
-### Algorithm Cost Comparison
-
-<p align="center">
-<img src="outputs/multi_algorithm_cost_comparison.png" width="700">
-</p>
 
