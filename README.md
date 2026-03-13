@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
+![Reinforcement Learning](https://img.shields.io/badge/RL-Project-green)
+
 <h1 align="center">
 Reinforcement Learning for Logistics Path Optimization
 </h1>

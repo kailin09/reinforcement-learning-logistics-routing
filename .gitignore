@@ -19,8 +19,8 @@ venv/
 Thumbs.db
 
 # Output files
-outputs/*.png
-outputs/*.csv
+#outputs/*.png
+#outputs/*.csv
 
 # Logs
 *.log
